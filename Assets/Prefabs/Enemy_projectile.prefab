@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 787503590962854230}
   - component: {fileID: 524431911667959530}
   - component: {fileID: 6986614423701172273}
+  - component: {fileID: 8923567148426386048}
   m_Layer: 0
   m_Name: Enemy_projectile
   m_TagString: Untagged
@@ -100,8 +101,8 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.8089161, y: 1.365385, z: 1.081215}
@@ -116,5 +117,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91da469f96e0c7749879ea1e377f7fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 40
+  Player_Cube: {fileID: 2367842966976462144, guid: 3ce2587197fc98f4c84cadd89d8354a1, type: 3}
+--- !u!114 &8923567148426386048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885291587060779853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f6e66eda65a924da3a6381c7b39c96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

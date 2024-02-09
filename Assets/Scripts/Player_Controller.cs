@@ -10,7 +10,7 @@ public class Player_Controller : MonoBehaviour
     public float verticalInput;
     public float speed = 10.0f;
     public float zRange = 5;
-    public float xRange = 8;
+    public float xRange = 7;
     public Transform spawnPoint;
 
     public GameObject projectilePrefab;
@@ -43,7 +43,7 @@ public class Player_Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(projectilePrefab, spawnPoint.position, projectilePrefab.transform.rotation);
-            Debug.Log("shoot something");
+            
         }
 
         horizontalInput = Input.GetAxis("Horizontal");
