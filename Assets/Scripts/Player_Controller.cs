@@ -14,6 +14,7 @@ public class Player_Controller : MonoBehaviour
     public Transform spawnPoint;
 
     public GameObject projectilePrefab;
+    public GameObject Enemy_projectile;
     void Start()
     {
         var PlayerColor = gameObject.GetComponent<Renderer>();
@@ -51,5 +52,17 @@ public class Player_Controller : MonoBehaviour
 
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
+    }
+
+}
+public class PlayerDeathSystem : MonoBehaviour
+{
+    void OnCollisionEnter(Collision collision) 
+    {
+        if (collision.gameObject.tag == "Bullet") //Use the tag that destroys the player on collision
+        {
+            Destroy(gameObject);
+           
+        }
     }
 }
